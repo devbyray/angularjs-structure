@@ -1,0 +1,17 @@
+{
+  "name": "ppp_properties_dev_angular_structure",
+  "version": "0.1.0",
+  "description": "AngularJS project structure",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.6.2",
+    "gulp-sass": "^0.7.1",
+    "browser-sync": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
