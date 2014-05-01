@@ -36,9 +36,9 @@
 					</ul>
 				</td>
 				<td><p>{{propertie.prop_description}}</p></td>
-				<td>
-					<p ng-repeat="photo_url in propertie.prop_photos">
-						<img src="images/{{photo_url}}" alt="asd" />
+				<td class="photos">
+					<p ng-repeat="photo_url in propertie.prop_photos" id="{{photo_url}}">
+						<img src="images/{{photo_url}}.jpg" alt="asd" />
 					</p>
 				</td>
 			</tr>
