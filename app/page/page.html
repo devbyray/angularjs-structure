@@ -1,0 +1,47 @@
+<div ng-controller="PageCtrl">
+	<h1>{{page.title}}</h1>
+	<div class="content">
+		{{page.content}}
+	</div>
+	<table class="table">
+		<caption>All properties</caption>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Price</th>
+				<th>NR</th>
+				<th>Postal</th>
+				<th>City</th>
+				<th>Email</th>
+				<th>Spaces</th>
+				<th>Cat</th>
+				<th>Description</th>
+				<th>Photo's</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-animate="animate" ng-repeat="propertie in page.properties">
+				<td>{{propertie.prop_title}}</td>
+				<td>€{{propertie.prop_price}}</td>
+				<td>{{propertie.prop_nr}}</td>
+				<td>{{propertie.prop_postal}}</td>
+				<td>{{propertie.prop_city}}</td>
+				<td>{{propertie.prop_email}}</td>
+				<td>{{propertie.prop_spaces}}</td>
+				<td>
+					<ul>
+						<li ng-repeat="cat in propertie.prop_cat">
+							{{cat}}
+						</li>
+					</ul>
+				</td>
+				<td><p>{{propertie.prop_description}}</p></td>
+				<td>
+					<p ng-repeat="photo_url in propertie.prop_photos">
+						<img src="images/{{photo_url}}" alt="asd" />
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

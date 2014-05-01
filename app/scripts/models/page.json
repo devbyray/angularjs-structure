@@ -1,0 +1,81 @@
+{
+	"title": "Home",
+	"content": "All the properties",
+	"properties": [
+		{
+			"prop_title": "Propertie 1",
+			"prop_price": 578,
+			"prop_street": "Fakestreet",
+			"prop_nr": 65,
+			"prop_postal": "3254XL",
+			"prop_city": "Den Haag",
+			"prop_phone": "0184-5623548",
+			"prop_email": "info@email.com",
+			"prop_m": "245",
+			"prop_spaces": 4,
+			"prop_cat": ["Kantoor", "Opslag", "Catering"],
+			"prop_lan": "124.68",
+			"prop_lon": "658.369",
+			"prop_sort": "rent",
+			"prop_ID": 135894123,
+			"prop_description": "kjabskdjbakjsbdkjbasdkjbakjsbdkjbaskdjbkjabsd",
+			"prop_parking": 54,
+			"prop_forsale": 0,
+			"prop_makelaar_ID": 238543,
+			"prop_other": "klasndjkbasjdb;akjsbdkj",
+			"prop_photos": [
+				"1.jpg", "2.jpg", "3.jpg"
+			]
+		},
+		{
+			"prop_title": "Propertie 1",
+			"prop_price": 578,
+			"prop_street": "Fakestreet",
+			"prop_nr": 65,
+			"prop_postal": "3254XL",
+			"prop_city": "Den Haag",
+			"prop_phone": "0184-5623548",
+			"prop_email": "info@email.com",
+			"prop_m": "245",
+			"prop_spaces": 4,
+			"prop_cat": ["Kantoor", "Opslag", "Catering"],
+			"prop_lan": "124.68",
+			"prop_lon": "658.369",
+			"prop_sort": "rent",
+			"prop_ID": 135894123,
+			"prop_description": "kjabskdjbakjsbdkjbasdkjbakjsbdkjbaskdjbkjabsd",
+			"prop_parking": 54,
+			"prop_forsale": 0,
+			"prop_makelaar_ID": 238543,
+			"prop_other": "klasndjkbasjdb;akjsbdkj",
+			"prop_photos": [
+				"1.jpg", "2.jpg", "3.jpg"
+			]
+		},
+		{
+			"prop_title": "Propertie 1",
+			"prop_price": 578,
+			"prop_street": "Fakestreet",
+			"prop_nr": 65,
+			"prop_postal": "3254XL",
+			"prop_city": "Den Haag",
+			"prop_phone": "0184-5623548",
+			"prop_email": "info@email.com",
+			"prop_m": "245",
+			"prop_spaces": 4,
+			"prop_cat": ["Kantoor", "Opslag", "Catering"],
+			"prop_lan": "124.68",
+			"prop_lon": "658.369",
+			"prop_sort": "rent",
+			"prop_ID": 135894123,
+			"prop_description": "kjabskdjbakjsbdkjbasdkjbakjsbdkjbaskdjbkjabsd",
+			"prop_parking": 54,
+			"prop_forsale": 0,
+			"prop_makelaar_ID": 238543,
+			"prop_other": "klasndjkbasjdb;akjsbdkj",
+			"prop_photos": [
+				"1.jpg", "2.jpg", "3.jpg"
+			]
+		}
+	]
+}

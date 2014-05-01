@@ -1,0 +1,23 @@
+/* Forms */
+form {
+	margin-bottom: 16px;
+}
+input, optgroup, select, textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+input,
+textarea {
+	padding: 8px;
+	&:focus {
+		outline: 0;
+		border: 1px solid green;
+	}
+}
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+	height: 150px;
+	max-height: 150px;
+	min-height: 150px;
+}

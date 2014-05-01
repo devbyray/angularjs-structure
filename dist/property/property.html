@@ -1,0 +1,99 @@
+<div ng-controller="PropertyCtrl">
+	<ng-svg></ng-svg>
+	<h1>{{property.title}}</h1>
+	<div class="content">
+	    {{property.content}}
+	    <div ng-controller="PropertyFormCtrl">
+	    	
+			<form class="form-horizontal" ng-submit="submit()">
+			  
+				<!-- Text input-->
+				<div class="control-group col-lg-12">
+				  <label class="control-label" for="textinput">Title</label>
+				  <div class="controls">
+				    <input type="text" ng-model="propertyItem.title" name="title" placeholder="placeholder" class="input-xlarge"/>
+				  </div>
+				</div>
+				<div class="control-group col-lg-10">
+				  <label class="control-label" for="textinput">Adres</label>
+				  <div class="controls">
+				    <input type="text" ng-model="propertyItem.adress" name="adress" placeholder="placeholder" class="input-xlarge"/>
+				  </div>
+				</div>
+				<div class="control-group col-lg-2">
+				  <label class="control-label" for="textinput">Huisnr</label>
+				  <div class="controls">
+				    <input type="text" ng-model="propertyItem.huisnr" name="huisnr" placeholder="placeholder" class="input-xlarge"/>
+				  </div>
+				</div>
+				<div class="control-group col-lg-12">
+				  <label class="control-label" for="textinput">Postcode</label>
+				  <div class="controls">
+				    <input type="text" ng-model="propertyItem.postcode" name="postcode" placeholder="placeholder" class="input-xlarge"/>
+				  </div>
+				</div>
+				<div class="control-group col-lg-12">
+				  <label class="control-label" for="textinput">Plaatsnaam</label>
+				  <div class="controls">
+				    <input type="text" ng-model="propertyItem.plaatsnaam" name="plaatsnaam" placeholder="placeholder" class="input-xlarge"/>
+				  </div>
+				</div>
+				
+				<div class="control-group">
+				  <div class="controls">
+				  	<label for="admin">
+					  	Keuze A
+				  		<input ng-model="propertyItem.rights" type="radio" name="a" value="admin">
+				  	</label>
+				  	<label for="user">
+					  	Keuze B
+					  	<input ng-model="propertyItem.rights" type="radio" name="b" value="user">
+				  	</label>
+				  	<label for="visitor">
+					  	Keuze C
+					  	<input ng-model="propertyItem.rights" type="radio" name="c" value="visitor">
+				  	</label>
+				  </div>
+				</div>
+
+				<div class="control-group">
+				  <div class="controls">
+				  	<label for="admin">
+					  	For sale
+				  		<input ng-model="propertyItem.forsale" type="checkbox" name="forsale" value="true">
+				  	</label>
+				  </div>
+				</div>
+				
+				<div class="control-group">
+				  <div class="controls">
+				  	<label for="admin">
+					  	Date
+				  		<input ng-model="propertyItem.date" type="datetime-local" name="date" value="true">
+				  	</label>
+				  </div>
+				</div>
+			  
+				<div class="control-group">
+				  <div class="controls">
+				    <input type="submit" id="submit" value="Submit" class="btn btn-primary" />
+				  </div>
+				</div>
+
+		  		<input ng-model="propertyItem.create" type="hidden" name="date" value="GetCurrentDate()">
+
+			</form>
+			<ul ng-repeat="data in propertyObject">
+		        <li>Title: {{data.title}}</li>
+		        <li>Adress: {{data.adress}} {{data.huisnr}}</li>
+		        <li>Postcode: {{data.postcode}}</li>
+		        <li>Plaatsnaam: {{data.plaatsnaam}}</li>
+		        <li>For sale: {{data.forsale}}</li>
+		        <li>Date: {{data.date | date:'short'}}</li>
+		        <li>Rights: {{data.rights}}</li>
+		    </ul>  
+	    </div>
+
+	</div>
+</div>
+
